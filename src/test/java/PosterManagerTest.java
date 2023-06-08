@@ -1,11 +1,11 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class posterManagerTest {
+public class PosterManagerTest {
     @Test
     public void AllFilm() {
 
-        posterManager post = new posterManager();
+        PosterManager post = new PosterManager();
         post.addNewPoster("Бладшот");
         post.addNewPoster("Вперёд");
         post.addNewPoster("Отель Белград");
@@ -22,7 +22,7 @@ public class posterManagerTest {
 
     @Test
     public void LastAddFilms() {
-        posterManager post = new posterManager();
+        PosterManager post = new PosterManager();
 
         post.addNewPoster("Бладшот");
         post.addNewPoster("Вперёд");
@@ -40,7 +40,7 @@ public class posterManagerTest {
 
     @Test
     public void LimitFilm() {
-        posterManager post = new posterManager(5);
+        PosterManager post = new PosterManager(5);
 
         post.addNewPoster("Бладшот");
         post.addNewPoster("Вперёд");
@@ -58,7 +58,7 @@ public class posterManagerTest {
 
     @Test
     public void MinLimit() {
-        posterManager post = new posterManager(5);
+        PosterManager post = new PosterManager(5);
 
         post.addNewPoster("Человек-невидимка");
         post.addNewPoster("Тролли.Мировой тур");
